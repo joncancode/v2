@@ -23,10 +23,38 @@ ul.nav a:hover {
     background-color: #6abaef; 
 }
 
+.jumbotron {
+    border: 2px solid #fcc29a;
+    height: 70vh;
+    margin-top: 35px;
+    background-color: white;
+    background-image: url("images/bridge.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.jumbotron-text {
+    color: white;
+    text-shadow: 1px 1px #13284a;
+    font-family: ''Verdana', sans-serif';
+    opacity: 1;
+}
+
+.jumbotron-text>a {
+    color: red;
+    text-shadow: 1px 1px #13284a;
+    font-family: ''Verdana', sans-serif';
+}
+
+
+
 footer {
     background-color: #6abaef;
     position:absolute;
     width:100%;
     bottom:0px;
     height: 10vh;
+    text-align: right;
+    padding-right: 25px;
 }
