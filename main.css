@@ -9,13 +9,17 @@
     text-align: center;
 }
 
+.social-link {
+    margin-top: 50%;
+}
+
 .page-title {
     font-family: 'Courgette', cursive;
-    font-size: 1.8em;
+    font-size: 2.7em;
     font-weight: bold;
     color: #13284a;
     text-align: center;
-    padding-top: 10px;
+    margin-top: 30px;
 }
 
 ul.nav a:hover { 
@@ -26,7 +30,7 @@ ul.nav a:hover {
 .jumbotron {
     border: 2px solid #fcc29a;
     height: 70vh;
-    margin-top: 35px;
+    margin-top: 15px;
     background-color: white;
     background-image: url("images/bridge.png");
     background-size: cover;
@@ -35,19 +39,37 @@ ul.nav a:hover {
 }
 
 .jumbotron-text {
-    color: white;
-    text-shadow: 1px 1px #13284a;
+    color: white; 
     font-family: ''Verdana', sans-serif';
     opacity: 1;
+    background-color: #13284a;
+    padding: 0.4em;
+    border-radius: 2%;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.jumbotron-text>strong {
+    color: #6abaef;
+    font-family: ''Verdana', sans-serif';
 }
 
 .jumbotron-text>a {
-    color: red;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
     text-shadow: 1px 1px #13284a;
     font-family: ''Verdana', sans-serif';
 }
 
-
+.jumbotron-text>a:hover {
+    font-weight: bold;
+    color: #ff7417;
+    text-decoration: none;
+    text-shadow: 1px 1px #13284a;
+    font-family: ''Verdana', sans-serif';
+}
 
 footer {
     background-color: #6abaef;

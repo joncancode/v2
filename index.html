@@ -20,27 +20,33 @@
             <ul class="nav nav-pills">
                 <li class="page-title">Jonathan Haines</li>
                 <li class="pull-right">
-                    <a class="nav-item nav-link" href="#">
-                        <img class="logo-image" src="images/smile.png" alt="logo-face" height="30" width="30">
+                    <a class="tog nav-item nav-link" href="#">
+                        <img class="logo-image" src="images/smile.png" alt="logo-face" height="75" width="75">
+                        <img class="logo-image" src="images/smile2.png" style="display:none;" alt="logo-real" height="75" width="75">
                     </a>
                 </li>
                 <li class="pull-right">
-                    <a class="nav-item nav-link" target="_new" href="http://bit.ly/2wYXFgX">
+                    <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2wYXFgX">
                         <img class="logo-image" src="images/github.png" alt="logo-github" height="30" width="30">
                     </a>
                 </li>
                 <li class="pull-right">
-                    <a class="nav-item nav-link" target="_new" href="http://bit.ly/2vFm0E1">
+                    <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2vFm0E1">
                         <img class="logo-image" src="images/linkedin.png" alt="logo-linkedin" height="30" width="30">
                     </a>
                 </li>
                 <li class="pull-right">
-                    <a class="nav-item nav-link" target="_new" href="http://bit.ly/2wjUuxP">
+                    <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2wjUuxP">
                         <img class="logo-image" src="images/instagram.png" alt="logo-instagram" height="30" width="30">
                     </a>
                 </li>
                 <li class="pull-right">
-                    <a class="nav-item nav-link" target="_new" href="http://bit.ly/2vzkggA">
+                        <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2vnnXK2">
+                            <img class="logo-image" src="images/facebook.png" alt="logo-facebook" height="30" width="30">
+                        </a>
+                    </li>
+                <li class="pull-right">
+                    <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2vzkggA">
                         <img class="logo-image" src="images/medium.png" alt="logo-medium" height="30" width="30">
                     </a>
                 </li>
@@ -51,31 +57,41 @@
 
     <div class="container">
         <div class="jumbotron">
-            <p class="jumbotron-text">
-                Hi, I'm
-                <strong>Jonathan Haines</strong>, a developer from
-                <strong>Brooklyn</strong>,
-                <strong>New York</strong>. After spending some time in the startup space, I decided to learn how to program. My enthusiasm
-                for coding led me to
-                <a class="about-text-links" target="_new" href="http://bit.ly/2vzkggA">write for tech publications</a> and
-                <a class="about-text-links" target="_new" href="http://bit.ly/2wEPgQb">teach high schoolers how to code</a>. 
+                <p class="jumbotron-text">
+                    Hi, I'm
+                    <strong>Jonathan Haines</strong>, a developer from
+                    <strong>Brooklyn</strong>,
+                    <strong>New York</strong>. 
+                    <br>
+                    <a class="about-text-links" target="_new" href="https://github.com/joncancode">I code</a>. 
+                    <a class="about-text-links" target="_new" href="http://bit.ly/2wEPgQb">I teach</a>.
+                    <a class="about-text-links" target="_new" href="http://bit.ly/2vzkggA">I write</a>.
+                    <a class="about-text-links" target="_new" href="https://jonathanhaines.smugmug.com/">I photograph</a>.
+                    <br>
+                    If you want to work with me, find me at <strong>jc.haines19@gmail.com</strong>.
 
-                
-                <br>
-                <br> My resume/CV can be found
-                <a class="about-text-links" target="_new" href="http://bit.ly/2gm8H9M">here</a>.
-            </p>
+                    <br>
+                    <br> My resume/CV can be found
+                    <a class="about-text-links" target="_new" href="http://bit.ly/2gm8H9M">here</a>.
+                </p>
         </div>
     </div>
 
     <!--Footer-->
     <footer class="nav">
 
-        <p class="copyright">© Jonathan Haines 2018</p>
+        <p class="copyright">© Jonathan Haines <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script></p>
 
     </footer>
 
     <!--Footer end-->
+    <script>
+            $(".tog").click(function () {
+                $('img', this).toggle();
+            });
+        </script>
 </body>
 
 </html>
