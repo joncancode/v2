@@ -78,5 +78,6 @@ footer {
     bottom:0px;
     height: 10vh;
     text-align: right;
-    padding-right: 25px;
+    padding: 20px 25px 0px 0px;
+    font-family: ''Verdana', sans-serif';
 }
