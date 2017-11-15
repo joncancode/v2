@@ -4,8 +4,8 @@
 
 .social-link {
     margin-top: 60%;
-    margin-left: -7.5px;
-    margin-right: -7.5px;
+    margin-left: -6.5px;
+    margin-right: -6.5px;
 }
 
 .page-title {
@@ -19,7 +19,16 @@
 
 ul.nav a:hover { 
     color: #13284a;
-    background-color: #6abaef; 
+    background: #6abaef; 
+    transition-duration: 0.75s;
+}
+
+.social-link:hover {
+    margin-top: 60%;
+    margin-left: -6.5px;
+    margin-right: -6.5px;
+    border-radius: 50%;
+    transform: rotate(-360deg);
 }
 
 .jumbotron {
@@ -64,6 +73,7 @@ ul.nav a:hover {
     text-decoration: none;
     text-shadow: 1px 1px #13284a;
     font-family: ''Verdana', sans-serif';
+    transition-duration: 0.5s;
 }
 
 footer {
