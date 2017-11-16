@@ -40,6 +40,8 @@ ul.nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    animation: .5s fadein 1s forwards;
+    opacity: 0;
 }
 
 .jumbotron-text {
@@ -52,6 +54,14 @@ ul.nav a:hover {
     font-size: 0.7em;
     text-align: center;
     line-height: 1.4;
+    animation: 3.5s fadein 1s forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+    }
 }
 
 .jumbotron-text>strong {
