@@ -1,14 +1,14 @@
 @media (orientation: landscape) {
-.nav {
-  border-bottom: 1.5px solid #6abaef;
-}
+  .nav {
+    border-bottom: 1.5px solid #6abaef;
+  }
 }
 
 @media (orientation: portrait) {
-    .nav {
-      display: none;
-    }
-    }
+  .nav {
+    display: none;
+  }
+}
 
 .social-link {
   margin-top: 60%;
@@ -39,17 +39,33 @@ ul.nav a:hover {
   transform: rotate(-360deg);
 }
 
-.jumbotron {
-  border: 2px solid #fcc29a;
-  height: 70vh;
-  margin-top: 15px;
-  background-color: white;
-  background-image: url('images/bridge.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  animation: 0.5s fadein 1s forwards;
-  opacity: 0;
+@media (orientation: landscape) {
+  .jumbotron {
+    border: 2px solid #fcc29a;
+    height: 70vh;
+    margin-top: 15px;
+    background-color: white;
+    background-image: url('images/bridge.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: 0.5s fadein 1s forwards;
+    opacity: 0;
+  }
+}
+
+@media (orientation: portrait) {
+  .jumbotron {
+    height: 60vh;
+    margin-top: 0px;
+    background-color: white;
+    background-image: url('images/bridge.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: 0.5s fadein 1s forwards;
+    opacity: 0;
+  }
 }
 
 .jumbotron-text {
@@ -116,16 +132,16 @@ ul.nav a:hover {
 }
 
 @media (orientation: landscape) {
-    .footer-pills {
-      display: none;
-    }
+  .footer-pills {
+    display: none;
   }
+}
 
-  @media (orientation: portrait) {
-    .footer-pills {
-        list-style: none;
-    }
+@media (orientation: portrait) {
+  .footer-pills {
+    list-style: none;
   }
+}
 
 .copyright {
   text-align: right;
