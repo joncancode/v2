@@ -1,98 +1,133 @@
+@media (orientation: landscape) {
 .nav {
-    border-bottom: 1.5px solid #6abaef;
+  border-bottom: 1.5px solid #6abaef;
+}
 }
 
+@media (orientation: portrait) {
+    .nav {
+      display: none;
+    }
+    }
+
 .social-link {
-    margin-top: 60%;
-    margin-left: -6.5px;
-    margin-right: -6.5px;
+  margin-top: 60%;
+  margin-left: -6.5px;
+  margin-right: -6.5px;
 }
 
 .page-title {
-    font-family: 'Courgette', cursive;
-    font-size: 2.7em;
-    font-weight: bold;
-    color: #13284a;
-    text-align: center;
-    margin-top: 25px;
+  font-family: 'Courgette', cursive;
+  font-size: 2.7em;
+  font-weight: bold;
+  color: #13284a;
+  text-align: center;
+  margin-top: 25px;
 }
 
-ul.nav a:hover { 
-    color: #13284a;
-    background: #6abaef; 
-    transition-duration: 0.75s;
+ul.nav a:hover {
+  color: #13284a;
+  background: #6abaef;
+  transition-duration: 0.75s;
 }
 
 .social-link:hover {
-    margin-top: 60%;
-    margin-left: -6.5px;
-    margin-right: -6.5px;
-    border-radius: 50%;
-    transform: rotate(-360deg);
+  margin-top: 60%;
+  margin-left: -6.5px;
+  margin-right: -6.5px;
+  border-radius: 50%;
+  transform: rotate(-360deg);
 }
 
 .jumbotron {
-    border: 2px solid #fcc29a;
-    height: 70vh;
-    margin-top: 15px;
-    background-color: white;
-    background-image: url("images/bridge.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    animation: .5s fadein 1s forwards;
-    opacity: 0;
+  border: 2px solid #fcc29a;
+  height: 70vh;
+  margin-top: 15px;
+  background-color: white;
+  background-image: url('images/bridge.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: 0.5s fadein 1s forwards;
+  opacity: 0;
 }
 
 .jumbotron-text {
-    color: white; 
-    font-family: ''Verdana', sans-serif';
-    opacity: 1;
-    background-color: #13284a;
-    padding: 0.4em;
-    border-radius: 2%;
-    font-size: 0.7em;
-    text-align: center;
-    line-height: 1.4;
-    animation: 3.5s fadein 1s forwards;
-    opacity: 0;
+  color: white;
+  font-family: ''Verdana', sans-serif';
+  opacity: 1;
+  background-color: #13284a;
+  padding: 0.4em;
+  border-radius: 2%;
+  font-size: 0.7em;
+  text-align: center;
+  line-height: 1.4;
+  animation: 3.5s fadein 1s forwards;
+  opacity: 0;
 }
 
 @keyframes fadein {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-.jumbotron-text>strong {
-    color: #6abaef;
-    font-family: ''Verdana', sans-serif';
+.jumbotron-text > strong {
+  color: #6abaef;
+  font-family: ''Verdana', sans-serif';
 }
 
-.jumbotron-text>a {
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    text-shadow: 1px 1px #13284a;
-    font-family: ''Verdana', sans-serif';
+.jumbotron-text > a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px #13284a;
+  font-family: ''Verdana', sans-serif';
 }
 
-.jumbotron-text>a:hover {
-    font-weight: bold;
-    color: #ff7417;
-    text-decoration: none;
-    text-shadow: 1px 1px #13284a;
-    font-family: ''Verdana', sans-serif';
-    transition-duration: 0.5s;
+.jumbotron-text > a:hover {
+  font-weight: bold;
+  color: #ff7417;
+  text-decoration: none;
+  text-shadow: 1px 1px #13284a;
+  font-family: ''Verdana', sans-serif';
+  transition-duration: 0.5s;
 }
 
-footer {
+@media (orientation: landscape) {
+  footer {
     background-color: #6abaef;
-    position:absolute;
-    width:100%;
-    bottom:0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
     height: 10vh;
-    text-align: right;
     padding: 20px 25px 0px 0px;
-    font-family: ''Verdana', sans-serif';
+  }
+}
+
+@media (orientation: portrait) {
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 10vh;
+    padding-right: 15px;
+  }
+}
+
+@media (orientation: landscape) {
+    .footer-pills {
+      display: none;
+    }
+  }
+
+  @media (orientation: portrait) {
+    .footer-pills {
+        list-style: none;
+    }
+  }
+
+.copyright {
+  text-align: right;
+  font-family: ''Verdana', sans-serif';
 }

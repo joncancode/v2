@@ -10,22 +10,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script>
-            window['_fs_debug'] = false;
-            window['_fs_host'] = 'fullstory.com';
-            window['_fs_org'] = '8AS4X';
-            window['_fs_namespace'] = 'FS';
-            (function(m,n,e,t,l,o,g,y){
-                if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-                g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-                o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-                y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-                g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-                g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-                g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-                d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-                ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-            })(window,document,window['_fs_namespace'],'script','user');
-            </script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = '8AS4X';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
+            g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+            o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+            g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+            g.clearUserCookie = function (c, d, i) {
+                if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+                    d = n.domain; while (1) {
+                    n.cookie = 'fs_uid=;domain=' + d +
+                        ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+                    }                
+}
+            };
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -33,7 +38,7 @@
 <body>
     <!--Nav-->
     <div class="container-fluid">
-        <div class="collapse navbar-collapse navHeaderCollapse">
+        <div class="navbar">
             <ul class="nav nav-pills">
                 <li class="page-title">Jonathan Haines</li>
                 <li class="pull-right">
@@ -63,10 +68,10 @@
                     </a>
                 </li>
                 <li onmousedown="event.preventDefault()" class="pull-right">
-                        <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2vnnXK2">
-                            <img class="logo-image" src="images/facebook.png" alt="logo-facebook" height="30" width="30">
-                        </a>
-                    </li>
+                    <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2vnnXK2">
+                        <img class="logo-image" src="images/facebook.png" alt="logo-facebook" height="30" width="30">
+                    </a>
+                </li>
                 <li onmousedown="event.preventDefault()" class="pull-right">
                     <a class="social-link nav-item nav-link" target="_new" href="http://bit.ly/2vzkggA">
                         <img class="logo-image" src="images/medium.png" alt="logo-medium" height="30" width="30">
@@ -79,41 +84,75 @@
 
     <div class="container">
         <div class="jumbotron">
-                <p class="jumbotron-text">
-                    Hi, I'm
-                    <strong>Jonathan Haines</strong>, a developer from
-                    <strong>Brooklyn</strong>,
-                    <strong>New York</strong>. 
-                    <br>
-                    <a class="about-text-links" target="_new" href="https://github.com/joncancode">I code</a>. 
-                    <a class="about-text-links" target="_new" href="http://bit.ly/2wEPgQb">I teach</a>.
-                    <a class="about-text-links" target="_new" href="http://bit.ly/2vzkggA">I write</a>.
-                    <a class="about-text-links" target="_new" href="https://jonathanhaines.smugmug.com/">I photograph</a>.
-                    <br>
-                    If you want to work with me, find me at <strong>jc.haines19@gmail.com</strong>.
+            <p class="jumbotron-text">
+                Hi, I'm
+                <strong>Jonathan Haines</strong>, a developer from
+                <strong>Brooklyn</strong>,
+                <strong>New York</strong>.
+                <br>
+                <a class="about-text-links" target="_new" href="https://github.com/joncancode">I code</a>.
+                <a class="about-text-links" target="_new" href="http://bit.ly/2wEPgQb">I teach</a>.
+                <a class="about-text-links" target="_new" href="http://bit.ly/2vzkggA">I write</a>.
+                <a class="about-text-links" target="_new" href="https://jonathanhaines.smugmug.com/">I photograph</a>.
+                <br> If you want to work with me, find me at
+                <strong>jc.haines19@gmail.com</strong>.
 
-                    <br>
-                    <br> My resume/CV can be found
-                    <a class="about-text-links" target="_new" href="http://bit.ly/2gm8H9M">here</a>.
-                </p>
+                <br>
+                <br> My resume/CV can be found
+                <a class="about-text-links" target="_new" href="http://bit.ly/2gm8H9M">here</a>.
+            </p>
         </div>
     </div>
 
     <!--Footer-->
-    <footer class="nav">
+    <footer class="footer">
 
-        <p class="copyright">© Jonathan Haines <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script></p>
+        <ul class="footer footer-pills">
+            <li onmousedown="event.preventDefault()" class="pull-left">
+                <a class="social-link footer-item footer-link" target="_new" href="http://bit.ly/2wYXFgX">
+                    <img class="logo-image" src="images/github.png" alt="logo-github" height="30" width="30">
+                </a>
+            </li>
+            <li onmousedown="event.preventDefault()" class="pull-left">
+                <a class="social-link footer-item footer-link" target="_new" href="http://bit.ly/2vFm0E1">
+                    <img class="logo-image" src="images/linkedin.png" alt="logo-linkedin" height="30" width="30">
+                </a>
+            </li>
+            <li onmousedown="event.preventDefault()" class="pull-left">
+                <a class="social-link footer-item footer-link" target="_new" href="https://angel.co/jonathan-haines?public_profile=1">
+                    <img class="logo-image" src="images/angel.png" alt="logo-angel" height="30" width="30">
+                </a>
+            </li>
+            <li onmousedown="event.preventDefault()" class="pull-left">
+                <a class="social-link footer-item footer-link" target="_new" href="http://bit.ly/2wjUuxP">
+                    <img class="logo-image" src="images/instagram.png" alt="logo-instagram" height="30" width="30">
+                </a>
+            </li>
+            <li onmousedown="event.preventDefault()" class="pull-left">
+                <a class="social-link footer-item footer-link" target="_new" href="http://bit.ly/2vnnXK2">
+                    <img class="logo-image" src="images/facebook.png" alt="logo-facebook" height="30" width="30">
+                </a>
+            </li>
+            <li onmousedown="event.preventDefault()" class="pull-left">
+                <a class="social-link footer-item footer-link" target="_new" href="http://bit.ly/2vzkggA">
+                    <img class="logo-image" src="images/medium.png" alt="logo-medium" height="30" width="30">
+                </a>
+            </li>
+        </ul>
+        <p class="copyright">© Jonathan Haines
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
 
     </footer>
 
     <!--Footer end-->
     <script>
-            $(".tog").click(function () {
-                $('img', this).toggle();
-            });
-        </script>
+        $(".tog").click(function () {
+            $('img', this).toggle();
+        });
+    </script>
 </body>
 
 </html>
