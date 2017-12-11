@@ -24,10 +24,10 @@
             g.clearUserCookie = function (c, d, i) {
                 if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
                     d = n.domain; while (1) {
-                    n.cookie = 'fs_uid=;domain=' + d +
-                        ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
-                    }                
-}
+                        n.cookie = 'fs_uid=;domain=' + d +
+                            ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+                    }
+                }
             };
         })(window, document, window['_fs_namespace'], 'script', 'user');
     </script>
@@ -84,7 +84,7 @@
 
     <div class="container">
         <div class="jumbotron">
-            <p class="jumbotron-text">
+            <h4 class="jumbotron-text">
                 Hi, I'm
                 <strong>Jonathan Haines</strong>, a developer from
                 <strong>Brooklyn</strong>,
@@ -99,9 +99,57 @@
 
                 <br>
                 <br> My resume/CV can be found
-                <a class="about-text-links" target="_new" href="http://bit.ly/2gm8H9M">here</a>.
-            </p>
+                <a class="about-text-links" target="_new" href="docs/Resume.pdf">here</a>.
+                <br>
+                <button class="project-button">Recent Projects</button>
+                </h4>
+                <div class="project-container" style="visibility: hidden">
+                    <div class="project">
+                        <h5 class="project-title">When Again?</h5>
+                        <img class="project-image" src="images/when-again.png" alt="When Again" width="150" height="100">
+                        <div class="project-links">
+                                <a class="project-link" target="_new" href="https://github.com/joncancode/remind-me/"><button class="git-link">Github
+                        </button></a>
+                        <a class="project-link" target="_new" href="https://when-did-that-happen.herokuapp.com/"><button class="demo-link">Demo
+                       </button></a>
+                    </div>
+                    </div>
+                    <div class="project">
+                            <h5 class="project-title">Pokemon Python</h5>
+                            <img class="project-image" src="images/pokemon-python.png" alt="Pokemon Python" width="150" height="100">
+                            <div class="project-links">
+                           <a class="project-link" target="_new" href="https://github.com/joncancode/console-adventure/"><button class="git-link">Github
+                            </button></a>
+                            <a class="project-link" target="_new" href="https://github.com/joncancode/console-adventure#try-it-yourself"><button class="demo-link">Demo
+                            </button></a>
+                        </div>
+                        </div>
+                        <div class="project">
+                                <h5 class="project-title">Note Hero</h5>
+                                <img class="project-image" src="images/note-hero.png" alt="Note Hero" width="150" height="100">
+                                <div class="project-links">
+                                <a class="project-link" target="_new" href="https://github.com/joncancode/flashcards"><button class="git-link">Github
+                                </button></a>
+                                <a class="project-link" target="_new" href="https://notehero.herokuapp.com/"><button class="demo-link">Demo
+                                </button></a>
+                            </div>
+                            </div>
+                            <div class="project">
+                                    <h5 class="project-title">My Rex</h5>
+                                    <img class="project-image" src="images/my-rex.png" alt="My Rex" width="150" height="100">
+                                    <div class="project-links">
+                                    <a class="project-link" target="_new" href="https://github.com/joncancode/my-rex"><button class="git-link">Github
+                                    </button></a>
+                                    <a class="project-link" target="_new" href="https://myrex.herokuapp.com/"><button class="demo-link">Demo
+                                    </button></a>
+                                </div>
+                                </div>
+                </div>
         </div>
+    </div>
+
+
+    </div>
     </div>
 
     <!--Footer-->
@@ -153,6 +201,15 @@
             $('img', this).toggle();
         });
     </script>
+<script>
+    $(".project-button").click(function() {
+        if ( $('.project-container').css('visibility') == 'hidden' )
+    $('.project-container').css('visibility','visible');
+        else
+    $('.project-container').css('visibility','hidden');
+        });
+</script>
+
 </body>
 
 </html>
